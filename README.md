@@ -1,10 +1,10 @@
 # 🕹️ All Project Games JavaScript
 
-Kumpulan proyek game interaktif berbasis JavaScript murni—tanpa library eksternal—yang dirancang untuk mengasah logika, meningkatkan keterampilan pemrograman, serta memperkenalkan dasar-dasar pengembangan game di web.
+Kumpulan proyek game interaktif berbasis JavaScript murni tanpa library eksternalyang dirancang untuk mengasah logika, meningkatkan keterampilan pemrograman, serta memperkenalkan dasar-dasar pengembangan game di web.
 
 ## 📦 Daftar Game (Coming Soon)
 
-📌 *Catatan:* Game baru akan ditambahkan secara bertahap seiring pengembangan.
+📌 _Catatan:_ Game baru akan ditambahkan secara bertahap seiring pengembangan.
 
 ## 🚀 Teknologi yang Digunakan
 
@@ -22,5 +22,5 @@ Kontribusi sangat terbuka! Jika kamu ingin menambahkan game baru atau meningkatk
 4. Kirim Pull Request.
 
 ## ✌️ Salam Akal Sehat
-![meme](https://th.bing.com/th/id/OIP.IN0zqLjbNtnwcoNEbmHp2wAAAA?w=165&h=180&c=7&r=0&o=7&pid=1.7&rm=3)
 
+![meme](https://th.bing.com/th/id/OIP.IN0zqLjbNtnwcoNEbmHp2wAAAA?w=165&h=180&c=7&r=0&o=7&pid=1.7&rm=3)
