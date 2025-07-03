@@ -7,11 +7,11 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf5e6;
+  background: linear-gradient(to bottom right, #ffffff, #dbeafe); /* putih ke biru lembut */
   color: #333;
   text-align: center;
-  padding: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 50px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Judul dan informasi */
@@ -32,7 +32,7 @@ button {
   margin: 10px 8px;
   padding: 10px 18px;
   font-size: 1rem;
-  background-color: #774936;
+  background-color: #3674B5;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -41,7 +41,7 @@ button {
 }
 
 button:hover {
-  background-color: #945f45;
+  background-color: #578FCA;
 }
 
 /* Papan permainan */
@@ -57,7 +57,7 @@ button:hover {
 .cell {
   width: 40px;
   height: 40px;
-  background-color: #9c6644;
+  background-color: #2c7be5; /* biru utama */
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -70,23 +70,20 @@ button:hover {
   transition: transform 0.15s ease, background-color 0.25s ease;
 }
 
-/* Hover interaktif */
 .cell:hover:not(.revealed) {
-  background-color: #a47148;
+  background-color: #489af0; /* biru hover */
 }
 
-/* Saat terbuka */
 .cell.revealed {
-  background-color: #ffe8d6;
+  background-color: skyblue; /* biru terang saat dibuka */
   color: #111;
   transform: scale(1.05);
   animation: flipReveal 0.3s ease;
 }
 
-/* Flag */
 .cell.flagged {
-  background-color: #cdb4a1;
-  color: #d62828;
+  background-color: #aecbfa; /* biru flag */
+  color: #1e3a8a;
 }
 
 /* Animasi */
@@ -120,7 +117,7 @@ button:hover {
 
 /* 🌙 DARK MODE */
 body.dark-mode {
-  background-color: #1e1e1e;
+  background: linear-gradient(to bottom right, #1e3a8a, #111827); /* biru gelap ke hitam */
   color: #f0f0f0;
 }
 
