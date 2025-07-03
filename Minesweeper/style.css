@@ -1,0 +1,153 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf5e6;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Judul dan informasi */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#timer,
+#best-time {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Tombol aksi */
+button {
+  margin: 10px 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  background-color: #774936;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #945f45;
+}
+
+/* Papan permainan */
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 4px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* Kotak sel */
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #9c6644;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  transition: transform 0.15s ease, background-color 0.25s ease;
+}
+
+/* Hover interaktif */
+.cell:hover:not(.revealed) {
+  background-color: #a47148;
+}
+
+/* Saat terbuka */
+.cell.revealed {
+  background-color: #ffe8d6;
+  color: #111;
+  transform: scale(1.05);
+  animation: flipReveal 0.3s ease;
+}
+
+/* Flag */
+.cell.flagged {
+  background-color: #cdb4a1;
+  color: #d62828;
+}
+
+/* Animasi */
+@keyframes flipReveal {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Responsive untuk layar kecil */
+@media (max-width: 500px) {
+  #board {
+    grid-template-columns: repeat(10, 32px);
+    gap: 3px;
+  }
+
+  .cell {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+/* 🌙 DARK MODE */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode h1 {
+  color: #f8f8f8;
+}
+
+body.dark-mode .cell {
+  background-color: #444;
+  color: #eee;
+}
+
+body.dark-mode .cell.revealed {
+  background-color: #888;
+  color: #111;
+}
+
+body.dark-mode .cell.flagged {
+  background-color: #aa6655;
+  color: #ffddcc;
+}
+
+body.dark-mode button {
+  background-color: #555;
+  color: #fdfdfd;
+}
+
+body.dark-mode button:hover {
+  background-color: #777;
+}
